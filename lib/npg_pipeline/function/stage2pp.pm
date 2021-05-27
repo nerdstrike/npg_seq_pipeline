@@ -127,7 +127,6 @@ sub create {
   } else {
     $self->debug('no stage2pp enabled data products, skipping');
     push @definitions, $self->create_definition({
-      identifier => $self->label,
       excluded   => 1
     });
   }
