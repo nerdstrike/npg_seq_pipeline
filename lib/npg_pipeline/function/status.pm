@@ -35,7 +35,6 @@ sub create {
   my $d = $self->create_definition({
     job_name      => $job_name,
     command       => $self->_command($status_files_path),
-    num_cpus      => [0],
   });
 
   return [$d];
